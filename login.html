@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="s" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/loginStyle.css">
+  </head>
+  <body>
+
+    <!-- FORM FEATURE
+    try incorportating facebooks login animation: The labels look like placeholders but actually reduce in size when you click on them
+    to do this use the dropdown idea from w3school
+   -->
+
+    <div class="container row vh-100 align-center justify-center">
+      <div class="form p-5 inside-bshad row">
+        <div class="heading d-flex m-1 justify-center m-auto">
+            <div id="login"  class="p-0 px-1 pointer-hand z-3 outside-bshad border-l3 bg-cream" onclick="login()">Login!</div>
+            <div id="signup" class="p-0 px-1 pointer-hand z-3 outside-bshad border-r3 bg-white" onclick="signUp()">Sign Up!</div>
+        </div>
+
+
+          <div class=""id="login-form">
+            <form class="" action="index.html" method="post">
+              <div class="m-1 inside-bshad p-0 font-increase">
+                <label for="uName">Username:</label>
+                <input type="text" name="uName" value="" id="uName" class="border-0 transparent-bg py-0" placeholder="John_Doe" important>
+              </div>
+              <div class="row m-1 inside-bshad align-center">
+                <div class="p-0">
+                  <label for="password">Password:</label>
+                  <input type="password" name="password" value="" id="password" min="8" class="border-0 transparent-bg py-0" placeholder="Minimum of 8 characters" important>
+                </div>
+                <div class="">
+                  <input type="checkbox" id="pwordCheck" class="m-0" onclick="showPword()" title="show password">
+                </div>
+              </div>
+              <div class="text-align-center">
+                <p>Forgot <a href="#" class="text-decoration-none">password?</a></p>
+              </div>
+              <div class="m-1 row justify-center py-0 bottom-border">
+                <input type="submit" name="" value="Submit" id="" class="px-1 py-0 border-0 inside-bshad border-3 transparent-bg pointer-hand">
+              </div>
+              <div class="text-align-center">
+                <p>Not yet registered? <a href="#" class="text-decoration-none" onclick="signUp()"> Sign Up!</a> </p>
+              </div>
+            </form>
+          </div>
+
+
+
+        <div class="" id="signIn-Form">
+          <form class="" action="index.html" method="post">
+            <div class="m-1 inside-bshad p-0">
+              <label for="fName">Full name:</label>
+              <input type="text" name="fName" id="fName" value="" placeholder="John Doe" class="border-0 transparent-bg py-0">
+            </div>
+            <div class="m-1 inside-bshad p-0">
+              <label for="lName">Username:</label>
+              <input type="text" name="lName" id="lName" value="" placeholder="John_Doe" class="border-0 transparent-bg py-0">
+            </div>
+            <div class="m-1 inside-bshad p-0">
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" value="" placeholder="JohndDoe@gmail.com" class="border-0 transparent-bg py-0">
+            </div>
+            <div class="m-1 inside-bshad p-0">
+              <label for="password">Password:</label>
+              <input type="password" name="" value="" class="border-0 transparent-bg py-0" placeholder="Minimum of 8 characters">
+            </div>
+            <div class="m-1 row justify-center py-0 bottom-border">
+              <input type="submit" name="" value="Submit" id="" class="px-1 py-0 border-0 inside-bshad border-3 transparent-bg pointer-hand">
+            </div>
+            <div class="text-align-center">
+              <p>Already registered? <a href="#" class="text-decoration-none" onclick="login()">Login!</a> </p>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="js/loginScript.js">
+
+    </script>
+  </body>
+</html>
